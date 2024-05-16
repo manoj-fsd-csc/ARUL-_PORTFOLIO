@@ -95,6 +95,10 @@ li {
   font-size: 1.5rem;
 }
 
+
+img{
+  border: 1px solid black;
+}
 .about {
   background-image: url("../assets/Shape4.png"), url("../assets/Shape4.png");
   background-size: 10rem;
@@ -311,12 +315,12 @@ li {
 
 .pro-tit{
   color: #9727ff;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .portfolio .portfolios {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
   gap: 2rem;
 }
 
@@ -324,6 +328,9 @@ li {
   height: 15rem;
 }
 
+.curd-img{
+  height: 15rem;
+}
 .project {
   height: 20rem;
   background-color: #9727ff;
@@ -430,14 +437,13 @@ li {
 }
 .contact-btn{
   background-color: #9727ff;
-  border-radius: 10px;
+   border: 1px solid white;
 }
 .contact-btn:hover{
   background-color: white;
   color: #9727ff;
   border: 3px solid #9727ff;
-  border-radius: 10px;
-}
+ }
 .footer{
   text-align: center;
 }
