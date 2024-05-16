@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+button {
+  padding: 1rem 3rem;
+  background-color: #9727ff;
+  color: #f4f4f4;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  background-color: #18213a;
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #9727ff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.home {
+  height: 100vh;
+  background-image: url("../assets/Shape1.png"), url("../assets/Shape2.png"), url("../assets/Shape3.png"), url("../assets/Rectangle2.png"), url("../assets/Rectangle1.png"), url("../assets/Rectangle3.png");
+  background-position: bottom 2rem left 2rem, top 1rem right 2rem, top 8rem left 10rem, bottom -9% left 0, top 0 left 0, top 0 right 0;
+  background-size: 1.8rem, 1.8rem, 10rem, 100vw, 100vw 100vh, auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.home nav {
+  display: flex;
+  padding: 3rem 10rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home nav .logo span {
+  color: #f4f4f4;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.home nav .links {
+  list-style-type: none;
+  display: flex;
+}
+
+.home nav .links li {
+  margin: 0 0.8rem;
+  color: #18213a;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.home .content {
+  margin: 5rem 16rem;
+  color: #f4f4f4;
+  width: 70%;
+}
+
+.home .content .title {
+  font-size: 5rem;
+}
+
+.home .content .subTitle {
+  font-size: 3rem;
+}
+
+.home .content .description {
+  font-size: 1.5rem;
+}
+
+.about {
+  background-image: url("../assets/Shape4.png"), url("../assets/Shape4.png");
+  background-size: 10rem;
+  background-position: top 3rem right 6rem, bottom 3rem left 6rem;
+  background-repeat: no-repeat;
+  color: #18213a;
+  padding: 5rem 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about .title {
+  width: 40%;
+  text-align: center;
+  color: #9727ff;
+}
+
+.about .subTitle {
+  margin: 2rem 0;
+  width: 70%;
+  text-align: center;
+}
+
+.about .bars-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.progress-container {
+  margin: 10px;
+}
+
+.about .bars-container .progress-container .detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .bars-container .progress-container progress {
+  appearance: none;
+  height: 0.6rem;
+  width: 20rem;
+}
+
+.about .bars-container .progress-container progress::-webkit-progress-bar {
+  background-color: #aeaeae;
+}
+
+.about .bars-container .progress-container progress::-webkit-progress-value {
+  background-color: #9727ff;
+}
+
+.skills {
+  padding: 5rem 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #18213a;
+}
+
+.skills .title {
+  color: #9727ff;
+  text-transform: uppercase;
+}
+
+.skills .description {
+  width: 50%;
+  text-align: center;
+}
+
+.skills .skills-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skills .skills-container .skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.6rem;
+  height: 20rem;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px 0px #ae68f0;
+}
+
+.skills .skills-container .skill:hover {
+  border-bottom: #9727ff 0.3rem solid;
+}
+
+.skills .skills-container .skill:hover .icon {
+  background-color: #9727ff;
+}
+
+.skills .skills-container .skill:hover .icon i {
+  color: #f4f4f4;
+}
+
+.skills .skills-container .skill .title {
+  color: #18213a;
+  text-transform: uppercase;
+}
+
+.skills .skills-container .skill .description {
+  width: 80%;
+}
+
+.skills .skills-container .skill .icon {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.15rem solid #9727ff;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+}
+
+.skills .skills-container .skill .icon i {
+  font-size: 1.5rem;
+  color: #18213a;
+}
+
+.service {
+  height: 10rem;
+  background-color: #9727ff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #f4f4f4;
+}
+
+.service .milestone {
+  text-align: center;
+}
+
+.service .milestone h2 {
+  font-size: x-large;
+}
+
+.service .milestone h3 {
+  font-size: medium;
+  font-weight: 500;
+}
+
+.experience {
+  background-image: url("../assets/Rectangle4.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: top -4rem right 0;
+  padding: 5rem 20rem;
+  color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.experience .title {
+  text-transform: uppercase;
+  color: #9727ff;
+}
+
+.experience .cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+
+.experience .cards .card {
+  box-shadow: 0px 5px 15px 0px black;
+  padding: 0 2rem;
+  margin: 3rem 0;
+  width: 17rem;
+  height: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.experience .cards .card .title {
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  color: #f4f4f4;
+}
+
+.experience .cards .card .icon {
+  color: #9727ff;
+  font-size: 2rem;
+}
+
+.experience .cards .card .subTitle {
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+}
+
+.experience .cards .card .description {
+  font-size: 0.9rem;
+}
+
+.portfolio {
+  color: #18213a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+
+.pro-tit{
+  color: #9727ff;
+  font-size: 2rem;
+}
+
+.portfolio .portfolios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.portfolio .portfolios img {
+  height: 15rem;
+}
+
+.project {
+  height: 20rem;
+  background-color: #9727ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../assets/Shape7.png"), url("../assets/Shape8.png"), url("../assets/Shape5.png"), url("../assets/Shape6.png"), url("../assets/Shape7.png"), url("../assets/Shape5.png"), url("../assets/Shape6.png");
+  background-repeat: no-repeat;
+  background-size: auto, 10rem, 9rem, 5rem, 10rem, 9rem, 5rem;
+  background-position: left 40rem top 3rem, bottom 1rem left 3rem, bottom 7rem left 2rem, bottom 2rem left 14rem, top 1rem right 3rem, top 7rem right 2rem, top 2rem right 14rem;
+}
+.pro-btn{
+  background-color: #18213a;
+  font-size: 1rem;
+  padding: 10px;
+  color: white;
+ }
+ .pro-btn:hover{
+  background-color: white;
+  color: #18213a;
+  border: 2px solid #18213a;
+ }
+
+.project .title {
+  text-transform: uppercase;
+  color: white;
+}
+
+.project .bar {
+  width: 10rem;
+  background-color: white;
+  margin: 2rem 0;
+}
+
+.project-btn{
+  background-color: #18213a;
+  border: 2px solid white;
+}
+.project-btn:hover{
+  background-color: white;
+  color: #18213a;
+  border: 2px solid #18213a;
+}
+
+.contact {
+  background-image: url("../assets/Rectangle5.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: top -4rem right 0;
+  color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30rem;
+}
+
+.contact .title {
+  color: #9727ff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.contact .contact-container {
+  display: flex;
+}
+
+.contact .contact-container .details-container .detail {
+  width: 80%;
+}
+
+.contact .contact-container .details-container .detail span {
+  color: #9727ff;
+}
+
+.contact .contact-container .details-container .bar {
+  width: 5rem;
+  background-color: #9727ff;
+  margin: 1rem 0;
+  border-color: #9727ff;
+}
+
+.contact .contact-container .contact-form .row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact .contact-container .contact-form .row input,
+.contact .contact-container .contact-form .row textarea {
+  background-color: transparent;
+  border-color: #9727ff;
+  height: 2.5rem;
+  border-width: 2px;
+  border-style: solid;
+  color: white;
+  padding: 0 1rem;
+}
+
+.contact .contact-container .contact-form .row input::placeholder,
+.contact .contact-container .contact-form .row textarea::placeholder {
+  color: white;
+}
+.contact-btn{
+  background-color: #9727ff;
+  border-radius: 10px;
+}
+.contact-btn:hover{
+  background-color: white;
+  color: #9727ff;
+  border: 3px solid #9727ff;
+  border-radius: 10px;
+}
+.footer{
+  text-align: center;
+}
